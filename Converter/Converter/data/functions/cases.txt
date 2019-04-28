@@ -1,0 +1,3 @@
+$lowercase(string)$							
+$uppercase(string)$					
+$leadingcapital(textString)$				

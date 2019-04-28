@@ -1,0 +1,2 @@
+$replaceall(string, regex, replacement_string)$
+$replacefirst(string, regex, replacement_string)$

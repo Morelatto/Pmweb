@@ -1,0 +1,4 @@
+$campaignid()$								
+$campaignmarketingprogram()$			
+$campaignmarketingstrategy()$			
+$campaignname()$

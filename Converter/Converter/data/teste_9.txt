@@ -1,0 +1,67 @@
+$SETVARS(SEASON, Winter)$
+
+$CONCAT(LOOKUP(AGE), SPACE(), years old today)$
+
+$DOCUMENT(/contentlibrary/common/footer.html)$
+
+$EMAILDOMAIN(LOOKUP(EMAIL_ADDRESS_))$
+
+$REPLACEALL(This palm tree is the tallest palm tree in the city, palm, redwood)$
+
+$GT(LOOKUP(AGE), 18)$
+
+$GE(LOOKUP(AGE), 18)$
+
+$LT(LOOKUP(AGE), 18)$
+
+$LE(LOOKUP(AGE), 18)$
+
+$EQ(LOOKUP(AGE), 18)$
+
+$NE(LOOKUP(AGE), 18)$
+
+$AND(NE(LOOKUP(AGE), 18), NOTHING(LOOKUP(FIRST_NAME)))$
+
+$OR(NE(LOOKUP(AGE), 18), NOTHING(LOOKUP(FIRST_NAME)))$
+
+$CAMPAIGNID()$
+
+$CAMPAIGNMARKETINGPROGRAM()$
+
+$CAMPAIGNMARKETINGSTRATEGY()$
+
+$CAMPAIGNNAME()$
+
+$COND(EMPTY(LOOKUP(FIRST_NAME)), NOTHING(), LOOKUP(FIRST_NAME))$
+
+$COND(GE(LOOKUP(AGE), 18), Welcome to our site., You are not allowed to proceed to the site.))$
+
+$COND(GE(LOOKUP(AGE), 18), Welcome to our site., COND(LT(LOOKUP(AGE), 18), You are not allowed to proceed to the site., What is your age?))$
+
+$FORMLINK(Preference_Center, AGE)$
+
+$FORMLINK(Preference_Center, CONTEST=Summer_Sweepstakes)$
+
+$FORMLINK(CAMPAIGNNAME())$
+
+$CLICKTHROUGH(Header_Logo)$
+
+$CLICKTHROUGH(Header_Logo, AGE)$
+
+$CLICKTHROUGH(Header_Logo, CONTEST=Summer_Sweepstakes)$
+
+$ADD(AGE, 2)$
+
+$SUB(AGE, 2)$
+
+$MUL(AGE, 2)$
+
+$LOOKUPRECORDS(!MasterData, FAVORITE_COLORS, CUSTOMER_ID_, LOOKUP(CUSTOMER_ID_), COLOR)$
+
+$LOOKUPRECORDS(!MasterData, FAVORITE_COLORS, CUSTOMER_ID_, LOOKUP(CUSTOMER_ID_), COLOR)$
+
+$FOREACH(CA_Loop, PAIRSLIST(1, PRODUCT_ID, LOOKUPRECORDS(!MasterData, CART_ABANDONMENT, CUSTOMER_ID_, LOOKUP(CUSTOMER_ID_), PRODUCT_ID)), Cart_Abandon, Cart_Abandon_Subdoc)$
+
+$SETVARS(LOOKUP(CA_Loop))$ 
+
+$LOOKUPTABLE(!MasterData, PRODUCTS, PRODUCT_ID, LOOKUP(PRODUCT_ID), PRODUCT_NAME)$

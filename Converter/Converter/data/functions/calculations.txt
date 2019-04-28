@@ -1,0 +1,5 @@
+$add(value1, value2, ...)$					
+$sub(value1, value2, ...)$					
+$mul(value1, value2, ...)$				
+$div(value1, value2, ...)$
+$mod(value1, value2, [decimal_places])$     

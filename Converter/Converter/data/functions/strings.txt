@@ -1,0 +1,7 @@
+$endswith(string, comparison_string)$
+$startswith(string, comparison_string)$
+$indexof(string, search_string [, start_index])$
+$charat(string, index)$
+$concat(value1, value2, ...)$
+$stringlength(string)$						
+$substring(string, start_index [,end_index])$

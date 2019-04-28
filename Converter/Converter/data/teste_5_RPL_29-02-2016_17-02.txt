@@ -1,0 +1,18 @@
+<!-- TAMANHO E ESTILOS PELA PET-->
+<#assign genero_from_pet = lookup>
+
+<#assign genero_temp = menina>
+
+<#assign genero_temp = cond>
+
+<#assign genero_temp = cond>
+
+<#assign genero_temp_2 = cond>
+
+ <!-- TODO: PEGA DADOS PELOS ULTIMOS 2 SKUs -->
+<#assign c1_genero = lookup>
+
+<#assign c2_genero = lookup>
+
+ <!--
+ -->

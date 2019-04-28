@@ -1,0 +1,100 @@
+Expressions:
+<#if value1 gt value1><#else></#if>
+<#if value1 ge value1><#else></#if>
+<#if value1 lt value1><#else></#if>
+<#if value1 le value1><#else></#if>
+<#if value1 eq value1><#else></#if>
+<#if value1 ne value1><#else></#if>
+Operators:
+<#if value1 && value2 && ...><#else></#if>
+<#if value1 || value2 || ...><#else></#if>
+
+Calculations:
+${value1 + value2 + ...}
+${value1 - value2 - ...}
+${value1 * value2 * ...}
+${value1 / value2 / ...}
+
+${avg(value1, value2, ..}
+${max(value1, value2, ..}
+${min(value1, value2, ..}
+Campaign Details:
+${campaign.id}
+${campaign.marketingprogram}
+${campaign.marketingstrategy}
+${campaign.name}
+Strings:
+${string[index]}
+${string?ends_with(comparison_string)}
+${string?index_of(search_string [,  start_index])}
+${value1 +  value2 +  ...}
+
+
+
+String - Cases:
+${string?lower_case}
+${string?upper_case}
+${textstring?cap_first}
+${textstring?capitalize}
+String - Replaces:
+${string?replace(regex, replacement_string)}
+${string?replace(regex, replacement_string, f)}
+Document:
+<#include "cms://foldername/documentname">
+<#include "http://url.com.br">
+For Each:
+
+Lookup:
+${name}
+
+
+
+Forms:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

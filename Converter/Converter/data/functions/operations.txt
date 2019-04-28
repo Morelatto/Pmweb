@@ -1,0 +1,3 @@
+$and(value1, value2, ...)$																							
+$or(value1, value2)$
+$not(value1, value2, ...)$																					

@@ -1,0 +1,1 @@
+ $foreach(produtos, pairslist(4, URLIMAGEM, NOMEPRODUTO, PRECO, URLPRODUTO, lookuprecords(Automaticos, QRY_MAIS_VENDIDOS, CATEGORIA, lookup(CATEGORIA), URLIMAGEM, NOMEPRODUTO, PRECO, URLPRODUTO)), /contentlibrary/automaticos, netfarma_produto.htm)$

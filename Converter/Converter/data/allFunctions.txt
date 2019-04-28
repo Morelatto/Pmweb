@@ -1,0 +1,116 @@
+Expressions:
+$gt(value1, value2)$    *
+$ge(value1, value2)$	*
+$lt(value1, value2)$	*
+$le(value1, value2)$	*
+$eq(value1, value2)$	*
+$ne(value1, value2)$	*
+
+Operators:
+$and(value1, value2, ...)$  *
+$or(value1, value2, ...)$   *
+$not(value1, value2, ...)$
+
+Calculations:
+$add(value1, value2, ...)$                  *
+$sub(value1, value2, ...)$                  *
+$mul(value1, value2, ...)$                  *
+$div(value1, value2, ...)$                  *
+$mod(value1, value2, [decimal_places])$     
+
+$avg(value1, value2, ...)$  *
+$max(value1, value2, ...)$  *
+$min(value1, value2, ...)$  *
+
+Campaign Details:
+$campaignid()$                  *
+$campaignmarketingprogram()$    *
+$campaignmarketingstrategy()$   *
+$campaignname()$                *
+
+Strings:
+$endswith(string, comparison_string)$               *
+$startswith(string, comparison_string)$             *
+$indexof(string, search_string [, start_index])$    *
+$charat(string, index)$                             *
+$concat(value1, value2, ...)$                       *
+$stringlength(string)$						
+$substring(string, start_index [,end_index])$
+
+String - Cases:
+$lowercase(string)$             *
+$uppercase(string)$             *
+$leadingcapital(textString)$    *
+$capitalizewords(textString)$   *
+
+String - Replaces:
+$replaceall(string, regex, replacement_string)$     *
+$replacefirst(string, regex, replacement_string)$   *
+
+Document:
+$document(folderName, documentName)$    *
+$document(http://url.com.br)$           *
+
+For Each:
+$foreach(loopVariableName, loopValueList, folderName, documentName)$												
+
+Lookup:
+$lookup(name)$	*				
+$lookuprecords(folderName, dataSource, lookupField, lookupValue, queryField1, queryField2, ...)$
+$lookuprecords(folderName, dataSource, pairs(field1, value1, field2, value2, ...), queryField1, queryField2, ...)$ 
+$lookuptable(folderName, dataSource, lookupField, lookupValues, queryField)$									 
+
+Forms:
+$formlink(<campaignName>, email-address_)$	
+$formlink(<formName>, first-name)$			
+
+Vars:
+$setglobalvars(name1, value1, name2, value2)$   *
+$setvars(name1, value1, name2, value2)$         *
+$setvars(lookup(loopVariableName))$             *
+
+
+
+$base64encode(string)$					
+$bazaarvoiceauthstring(BazaarVoice key String,Recipient Authentication string)$
+$between(testValue, value1, value2)$
+$clickthrough(linkName)$					
+$clickthrough(linkName, additionalInfo)$	
+$commalist(string1, string2, ...)$
+$cond(testValue, match, noMatch)$
+$containsvalue(nameList)$ 
+$count(valueList)$
+$dateformat(datevalue, offset, format)$
+$divformat(dividend, divisor [,format, locale] )$
+$emaildomain(lookup(EMAIL_ADDRESS_))$		
+$empty(testString)$
+$escapecommas(value1, value2, ...)$
+$externalcampaigncode()$
+$firstname(nameString)$
+$generateContentFromXML(XML_Data, XSLT_Rules)$
+$getURLContent(URL, ErrorCode, argument1, value1, argument2, value2, ...)$
+$hex(string)$
+$launchid()$
+$listcontains(testValue, valueList)$
+$messageformat()$
+$nonemptyfields(fieldName1, fieldName2, ...)$
+$nonemptyvalues(fieldName1, fieldName2, ...)$
+$nothing()$
+$numberformat(value,format[,groupSeparatorFlag,negativeParenthesesFlag[,locale]])$
+$outputencoding(lookup(name))$
+$outputjsencoding(lookup(name))$
+$prefilledform(targetCampaignName)$
+$rand(value)$
+$randomsubset(defaultValue, maxSubsetSize, valueList)$
+$round(value)$
+$securedigest(value)$
+$securedigest(value, algorithm)$
+$secureDigestAsHex(value)$
+$secureDigestAsHex(value, algorithm)$
+$select(testValue, value1, return1, value2, return2, ...)$
+$select(testValue, value1, return1, value2, return2, ..., default)$
+$space()$
+$todayformat(offset, format)$
+$unique(itemList)$
+$urlencode(string)$
+$varlist(variableCount, variableList, valueList)$

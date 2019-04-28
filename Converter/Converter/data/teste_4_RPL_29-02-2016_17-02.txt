@@ -1,0 +1,13 @@
+
+<#global contador = add>
+
+<#assign width = cond>
+
+<#assign categoria_1 = lookuprecords>
+
+<#assign categoria_2 = lookuprecords>
+
+<#assign categoria_3 = lookuprecords>
+
+<#assign categorias = cond>
+

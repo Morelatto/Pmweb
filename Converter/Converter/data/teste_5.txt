@@ -1,0 +1,56 @@
+<!-- TAMANHO E ESTILOS PELA PET-->
+    $setvars(GENERO_FROM_PET,lookup(LASTORDERCONS_SEGMENTO))$
+    $setvars(GENERO_TEMP,MENINA)$
+    $setvars(GENERO_TEMP, cond( eq(lookup(GENERO_FROM_PET),MENINO), MENINO, lookup(GENERO_TEMP) ))$
+    $setvars(GENERO_TEMP, cond( eq(lookup(GENERO_FROM_PET),MENINA;MENINO), MENINA, lookup(GENERO_TEMP) ))$
+    $setvars(GENERO_TEMP_2, cond( eq(lookup(GENERO_FROM_PET),MENINA;MENINO), MENINO, lookup(GENERO_TEMP) ))$
+    <!-- TODO: PEGA DADOS PELOS ULTIMOS 2 SKUs -->
+    $setvars(C1_GENERO, lookup(GENERO_TEMP))$
+    $setvars(C2_GENERO, lookup(GENERO_TEMP_2))$
+    <!--
+    -->
+    $setvars(LAST_ORDER_ESTILO, concat(replaceall(lookup(LASTORDERCONS_TIPO_PRODUTO), ACESSORIOS;, nothing() ),escapecommas(;)))$
+    $setvars(estilo_1,substring(lookup(LAST_ORDER_ESTILO),0,indexof(lookup(LAST_ORDER_ESTILO),escapecommas(;))))$
+    $setvars(C1_ESTILO, lookup(estilo_1))$
+    $setvars(C2_ESTILO, lookup(estilo_1))$
+    $setvars(C1_LINHA, PRINCESS EXP)$ <!-- NOT USED ON THIS TYPE -->
+    $setvars(C2_LINHA, PRINCESS EXP)$ <!-- NOT USED ON THIS TYPE -->
+    <!-- TODO: USE THIS DATA TO ASSIGN VALUES TO ESTILO E LINHA _ULTIMA_COMPRA -->
+    <!-- DADOS DA SUP -->
+    $setvars(NOME_CAM, campaignname())$
+    $setvars(GEN_ULTIMA_COMPRA, F)$ <!-- based on C1 and C2 GENERO -->
+    $setvars(GEN_ULTIMA_COMPRA, cond( and(eq(lookup(C1_GENERO),MENINO), eq(lookup(C2_GENERO),MENINO), 1), M, lookup(GEN_ULTIMA_COMPRA) ))$
+    $setvars(GEN_ULTIMA_COMPRA, cond( and(eq(lookup(C1_GENERO),MENINA), eq(lookup(C2_GENERO),MENINA), 1), F, lookup(GEN_ULTIMA_COMPRA) ))$
+    $setvars(GEN_ULTIMA_COMPRA, cond( and(eq(lookup(C1_GENERO),MENINA), eq(lookup(C2_GENERO),MENINO), 1), A, lookup(GEN_ULTIMA_COMPRA) ))$
+    <!--GEN:-->
+    $setvars(GEN_ULTIMA_COMPRA, cond( eq(lookup(GENERO_FROM_PET),MENINA), F, lookup(GEN_ULTIMA_COMPRA) ))$
+    $setvars(GEN_ULTIMA_COMPRA, cond( eq(lookup(GENERO_FROM_PET),MENINO), M, lookup(GEN_ULTIMA_COMPRA) ))$
+    $setvars(GEN_ULTIMA_COMPRA, cond( eq(lookup(GENERO_FROM_PET),MENINA;MENINO), A, lookup(GEN_ULTIMA_COMPRA) ))$
+    $setvars(C1_GENERO, cond(eq(lookup(GEN_ULTIMA_COMPRA),A),MENINO,lookup(C1_GENERO)))$
+    $setvars(C2_GENERO, cond(eq(lookup(GEN_ULTIMA_COMPRA),A),MENINA,lookup(C2_GENERO)))$
+    <!--
+    GEN_ULTIMA_COMPRA <br>
+    -->
+    $setvars(ESTILO_ULTIMA_COMPRA, SANDALIA)$
+    $setvars(LINHA_ULTIMA_COMPRA, PRINCESS EXP)$
+    $setvars(SUP_KEY, concat(campaignname(),_,todayformat(0, MM),_,lookup(GEN_ULTIMA_COMPRA)) )$
+    
+    $setvars(LOCAL_SNIPPET, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),SNIPPET) )$
+    $setvars(LOCAL_SUBJECT, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),SUBJECT) )$
+    $setvars(LOCAL_B_DESTAQUE_IMG, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),B_DESTAQUE_IMG) )$
+    $setvars(LOCAL_B_DESTAQUE_LINK, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),B_DESTAQUE_LINK) )$
+    $setvars(LOCAL_B_REENGAJ_IMG, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),B_REENGAJ_IMG) )$
+    $setvars(LOCAL_B_REENGAJ_LINK, lookuprecords(Automaticos,SUP_Campanhas,CAMPANHA,lookup(SUP_KEY),B_REENGAJ_LINK) )$
+    
+    <!-- PRODUTOS -->
+    $setvars(ultimos_tamanhos,concat(lookup(GRADE_ULTIMA_COMPRA),escapecommas(;) ) )$
+    $setvars(ultimos_tamanhos,substring(lookup(ultimos_tamanhos),round(add(1,indexof(lookup(ultimos_tamanhos),/)))))$
+    $setvars(cod_tam1,substring(lookup(ultimos_tamanhos),indexof(lookup(ultimos_tamanhos),escapecommas(;))))$
+    $setvars(cod_tam2,substring(lookup(cod_tam1),round(add(1,indexof(lookup(ultimos_tamanhos),escapecommas(;))))))$
+    $setvars(tamanho1,substring(lookup(ultimos_tamanhos),0,indexof(lookup(ultimos_tamanhos),escapecommas(;))))$
+    $setvars(tamanho2,substring(lookup(cod_tam1),1,round(add(1,indexof(lookup(ultimos_tamanhos),escapecommas(;))))))$
+    $setvars(tamanho2_original,substring(lookup(cod_tam1),1,round(add(1,indexof(lookup(ultimos_tamanhos),escapecommas(;))))))$
+    $setvars(tamanho2, cond(empty(lookup(tamanho2)), lookup(tamanho1), lookup(tamanho2) ) )$
+    $setvars(tamanho_temp, cond( and( eq( eq(lookup(tamanho1),lookup(tamanho2)), 0) , eq(lookup(GENERO_FROM_PET),MENINA;MENINO), 1) , lookup(tamanho2_original), lookup(tamanho1) ) )$
+    $setvars(tamanho2, lookup(tamanho_temp))$
+    $setglobalvars(product_counter, 0)$

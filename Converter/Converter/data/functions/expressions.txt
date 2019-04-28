@@ -1,0 +1,6 @@
+$gt(value1, value2)$
+$ge(value1, value2)$
+$lt(value1, value2)$
+$le(value1, value2)$
+$eq(value1, value2)$
+$ne(value1, value2)$	

@@ -1,0 +1,116 @@
+Expressions:
+$gt(value1, value2)$						= <#if value1 gt value2><#else></#if>
+$ge(value1, value2)$						= <#if value1 gte value2><#else></#if>
+$lt(value1, value2)$						= <#if value1 lt value2><#else></#if>
+$le(value1, value2)$						= <#if value1 eq value2><#else></#if>
+$eq(value1, value2)$						= <#if value1 == value2><#else></#if>
+$ne(value1, value2)$						= <#if value1 != value2><#else></#if>
+
+Operators:
+$and(value1, value2, ...)$					= <#if value1 && value2 && ...><#else></#if>
+$or(value1, value2, ...)$					= <#if value1 || value2 || ...><#else></#if>
+$not(value1, value2, ...)$ ******************
+
+Calculations:
+$add(value1, value2, ...)$					= ${value1 + value2 + ...}
+$sub(value1, value2, ...)$					= ${value1 - value2 - ...}
+$mul(value1, value2, ...)$					= ${value1 * value2 * ...}
+$div(value1, value2, ...)$					= ${value1 / value2 / ...}
+$mod(value1, value2, [decimal_places])$	*************	= ${value1 % value2}
+
+$avg(value1, value2, ...)$					= ${avg(value1, value2, ...)}
+$max(value1, value2, ...)$					= ${max(value1, value2, ...)}
+$min(value1, value2, ...)$					= ${min(value1, value2, ...)}
+
+Campaign Details:
+$campaignid()$								= ${campaign.id}
+$campaignmarketingprogram()$				= ${campaign.marketingprogram}
+$campaignmarketingstrategy()$				= ${campaign.marketingstrategy}
+$campaignname()$							= ${campaign.name}
+
+Strings:
+$capitalizewords(textString)$				= ${textString?capitalize}
+$charat(string, index)$						= ${string[index]}
+$endswith(string, comparison_string)$		= ${string?ends_with(comparison_string)}
+$indexof(string, search_string [, start_index])$																	= ${string?index_of(search_string [, start index])}
+$concat(value1, value2, ...)$				= ${value1 + value2 + ...}
+$startswith(string, comparison_string)$		= ${string?starts_with(comparison_string)}
+$stringlength(string)$						= ${string?length}
+$substring(string, start_index [,end_index])$= ${string?substring(start_index [,end_index])}
+
+String - Cases:
+$lowercase(string)$							= ${string?lower_case}
+$uppercase(string)$							= ${string?upper_case}
+$leadingcapital(textString)$				= ${textString?cap_first}
+
+String - Replaces:
+$replaceall(string, regex, replacement_string)$ = ${string?replace(regex, replacement_string)}
+$replacefirst(string, regex, replacement_string)$ = ${string?replace(regex, replacement_string, f)}
+
+Document:
+$document(folderName, documentName)$		= <#include "cms:/folderName/document">
+$document(http://url.com.br)$								= <#include url>
+
+For Each:
+$foreach(loopVariableName, loopValueList, folderName, documentName)$												= <#list loopValueList as loopVariableName></#list>
+
+Lookup:
+$lookup(name)$								= ${name}
+$lookuprecords(folderName, dataSource, lookupField, lookupValue, queryField1, queryField2, ...)$					= <#data datasource as hash-name><#filter lookupField=lookupValue><#fields queryField1 queryField2 ...>...<#/data> 
+$lookuprecords(folderName, dataSource, pairs(field1, value1, field2, value2, ...), queryField1, queryField2, ...)$	= <#data datasource as hash-name><#filter field1=value1 field2=value2><#fields queryField1 queryField2 ...>...<#/data> 
+$lookuptable(folderName, dataSource, lookupField, lookupValues, queryField)$										= <#data datasource as hash-name><#filter lookupField=lookupValue><#fields queryField1>...<#/data> 
+
+Forms:
+$formlink(<campaignName>, email-address_)$	= ${form(campaign.name, {})}
+$formlink(<formName>, first-name)$			= ${form(formName, {}, 'first-name')}
+
+
+
+
+
+$base64encode(string)$						= string?base64 
+$bazaarvoiceauthstring(BazaarVoice key String,Recipient Authentication string)$										= bazaarvoiceauthstring(key, string) 
+$between(testValue, value1, value2)$
+$clickthrough(linkName)$					= ${clickthrough(linkName)}
+$clickthrough(linkName, additionalInfo)$	= ${clickthrough(linkName, additionalInfo)}
+$commalist(string1, string2, ...)$
+$cond(testValue, match, noMatch)$ = <#if testValue>match<#else>noMatch</#if>
+$containsvalue(nameList)$ 
+$count(valueList)$
+$dateformat(datevalue, offset, format)$
+$divformat(dividend, divisor [,format, locale] )$
+$emaildomain(lookup(EMAIL_ADDRESS_))$		= ${emaildomain(CONTACTS_LIST.EMAIL_ADDRESS_)}
+$empty(testString)$
+$escapecommas(value1, value2, ...)$
+$externalcampaigncode()$
+$firstname(nameString)$
+$generateContentFromXML(XML_Data, XSLT_Rules)$
+$getURLContent(URL, ErrorCode, argument1, value1, argument2, value2, ...)$
+$hex(string)$
+$launchid()$
+$listcontains(testValue, valueList)$
+$messageformat()$
+$nonemptyfields(fieldName1, fieldName2, ...)$
+$nonemptyvalues(fieldName1, fieldName2, ...)$$not(value)$
+$nothing()$
+$numberformat(value,format[,groupSeparatorFlag,negativeParenthesesFlag[,locale]])$
+$outputencoding(lookup(name))$
+$outputjsencoding(lookup(name))$
+$prefilledform(targetCampaignName)$
+$rand(value)$
+$randomsubset(defaultValue, maxSubsetSize, valueList)$
+$round(value)$
+$securedigest(value)$
+$securedigest(value, algorithm)$
+$secureDigestAsHex(value)$
+$secureDigestAsHex(value, algorithm)$
+$select(testValue, value1, return1, value2, return2, ...)$
+$select(testValue, value1, return1, value2, return2, ..., default)$
+$setglobalvars(name1, value1, name2, value2, ...)$
+$setvars(name1, value1, name2, value2, ...)$= <#assign name1="value1">
+$setvars(lookup(loopVariableName))$
+$space()$
+$todayformat(offset, format)$
+$unique(itemList)$
+$urlencode(string)$
+$varlist(variableCount, variableList, valueList)$

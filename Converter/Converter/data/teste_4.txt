@@ -1,0 +1,7 @@
+ $setglobalvars(lookup(restaurante))$
+      $setglobalvars(contador,add(lookup(contador),1))$
+      $setvars(width,cond(lt(lookup(RATING), 1),12,cond(eq(lookup(RATING), 1),20,cond(between(lookup(RATING), 1.1, 1.9),30,cond(eq(lookup(RATING), 2),40,cond(between(lookup(RATING), 2.1, 2.9),48,cond(eq(lookup(RATING), 3),56,cond(between(lookup(RATING), 3.3, 3.9),65,cond(eq(lookup(RATING), 4),74,cond(between(lookup(RATING), 4.1, 4.9),82,cond(eq(lookup(RATING), 5),91,0)))))))))))$
+      $setvars(CATEGORIA_1, lookuprecords(z_PmwebData1st, RESTAURANTES_CATEGORIAS, pairs(RESTAURANT_ID, lookup(RESTAURANT_ID), RN, 1), CATEGORYNAME))$
+      $setvars(CATEGORIA_2, lookuprecords(z_PmwebData1st, RESTAURANTES_CATEGORIAS, pairs(RESTAURANT_ID, lookup(RESTAURANT_ID), RN, 2), CATEGORYNAME))$
+      $setvars(CATEGORIA_3, lookuprecords(z_PmwebData1st, RESTAURANTES_CATEGORIAS, pairs(RESTAURANT_ID, lookup(RESTAURANT_ID), RN, 3), CATEGORYNAME))$
+      $setvars(CATEGORIAS, cond(empty(lookup(CATEGORIA_1)),space(), cond(empty(lookup(CATEGORIA_2)),lookup(CATEGORIA_1), cond(empty(lookup(CATEGORIA_3)),concat(lookup(CATEGORIA_1),space(),-,space(),lookup(CATEGORIA_2)), concat(lookup(CATEGORIA_1),space(),-,space(),lookup(CATEGORIA_2),space(),-,space(),lookup(CATEGORIA_3))))))$

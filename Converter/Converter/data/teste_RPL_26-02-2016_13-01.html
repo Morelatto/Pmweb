@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Micro Templates</title>
+ <style type="text/css">
+ .ExternalClass * { line-height:100%; }
+ .a5q {display:none!important;}
+ @media only screen and (max-width: 480px) {
+ a[href^="x-apple-data-detectors:"] {
+ color: inherit;
+ text-decoration: inherit;
+ }
+ table[class="principal"] {
+ width: 310px !important;
+ -webkit-text-size-adjust: none;
+ }
+ *[class*="hidden"] { display: none !important; }
+ *[class*="no-float"] {
+ float: none !important;
+ width: 100% !important;
+ }
+ td[class*="no-float"] { display: block !important; }
+ td[class*="resize-img"] img,
+ img[class*="resize-img"] {width:100%!important;height:auto!important;}
+ /*---Snippet---*/
+ table[class="box-snippet"]:first-child { width: 195px; }
+ table[class="box-snippet"]:last-child { width: 75px; }
+ *[class*="snippet"] {text-align:left!important;}
+ *[class*="snippet"],
+ *[class*="snippet"] a,
+ *[class*="snippet"] span { font-size: 9px !important; }
+ *[class*="snippet"] a { line-height: 16px !important; }
+ *[class*="snippet"] > a:last-child { float: right !important; }
+ *[class*="snippet"] > a:first-child { float: left !important; }
+ /*---Header---*/
+ td[class*="header"] {height:35px!important;padding:0 5px 10px!important;}
+ td[class*="header"] table,
+ td[class*="header"] table td {height:15px!important;}
+ td[class*="logo"] {height:25px!important;}
+ td[class*="logo"] img {width:auto!important;height:16px!important;}
+ td[class*="logo"] td,
+ td[class*="menu"] td {height:25px!important;}
+ td[class*="menu"] a {font-size: 8px !important;}
+ td[class="itemMenu"] a {
+ font-size: 10px !important;
+ padding: 10px 0;
+ }
+ td[class="itemMenu"] a img { height: 10px; }
+ /*---Menu 2---*/
+ td[class="menu2"] td[class="itemMenu"] a {font-size:11px!important;padding:0!important;}
+ td[class="menu2"] td[class="tdItemMenu"] {padding:0 5px 0 5px!important;}
+ td[class="menu2"] td[class*="logo"],
+ td[class="menu2"] td[class*="logo"] a img {height:54px!important;width:95px!important;}
+ /*---Footer---*/
+ td[class*="footer"] td,
+ td[class*="footer"] td span {font-size:10px!important;line-height:15px!important;}
+ td[class="foo-menu"] {padding-bottom:22px!important;}
+ td[class="foo-menu"] table,
+ td[class="foo-menu"] table td {height:25px!important;width:auto!important;}
+ td[class="foo-menu"] a {font-size:10px!important;}
+ td[class="foo-menu"] .pipe {padding:0 5px!important;font-size:12px!important;}
+ td[class="tdCategoria"] {padding-bottom:0px!important;}
+ table[class="tbCategoria"] {width:150px!important;}
+ table[class="tbCategoria"] td {padding:0 0 20px 0!important;}
+ table[class="tbCategoria"] img {width:auto!important;height:25px!important;}
+ table[class="tbCategoria"] a {font-size:11px!important;}
+ td[class="tdCategoriaLine"] {padding-bottom:20px!important;}
+ td[class="social"] {padding-bottom:10px!important;}
+ td[class="social"] table {width:90%!important;}
+ td[class="social"] img {width:90%!important;}
+ td[class="social"] .no-float {padding-bottom:15px!important;}
+ td[class="legal"] span,
+ td[class="legal"] span a {font-size:10px!important;line-height:15px!important;}
+ td[class*="td-space"] {padding:0 5px 10px!important;}
+ td[class*="td-space-snippet"] {padding:0 5px!important;}
+ /*--------------------------
+ -----Blocos de conteúdo-----
+ --------------------------*/
+ *[class*="cf"]:after {
+ visibility: hidden;
+ display: block;
+ font-size: 0;
+ content: " ";
+ clear: both;
+ height: 0;
+ }
+*[class*="cf"] { display: inline-block; }
+* html *[class*="cf"] { height: 1%; }
+*[class*="cf"] { display: block; }
+/* [M86-88] | [M137] */
+table[class="box-tres-produtos"] .tres-produtos-categoria {height:20px!important;}
+table[class="box-tres-produtos"] .tres-produtos-categoria a {font-size:11px!important;}
+table[class="box-tres-produtos"] td[class="tres-produtos-nome"] {padding:0 10px!important;height:50px!important;}
+table[class="box-tres-produtos"] td[class="tres-produtos-nome"] a {font-size:11px!important;line-height:14px!important;}
+table[class="box-tres-produtos"] td[class="tres-produtos-preco"] a {font-size:15px!important;}
+table[class="box-tres-produtos"] td[class="tres-produtos-preco"] a[class="tres-produtos-texto"] {font-size:11px!important;}
+table[class="box-tres-produtos"] .btn img {width:107px!important;height:auto!important;}
+table[class="box-tres-produtos"] td[class*="tres-produtos"] {width:146px!important;}
+table[class="box-tres-produtos"] td[class="tres-produtos-divisor"] {width:10px!important;}
+table[class="box-tres-produtos"] a[class="tres-produtos-texto"] {font-size:11px!important;}
+table[class="box-tres-produtos"] .tres-produtos.one {width:100%!important;padding-bottom:10px!important;}
+/* ONDAS */
+td[class*="gostou-das-dicas"] a {background-position:center center!important;display:block!important;width:300px!important;height:172px!important;}
+td[class*="exp-tbm"] a {background-position:center center!important;display:block!important;width:300px!important;height:26px!important;}
+/* ONDA 1 */
+td[class*="dica-infalivel"] a {background-position:center center!important;display:block!important;width:300px!important;height:101px!important;}
+table[class*="prod-onda1"] td[class="text"] {padding:10px!important;}
+table[class*="prod-onda1"] td[class="text"] a span {font-size:11px!important;line-height:15px!important;}
+table[class*="prod-onda1"] td[class="text"] a span.prod-name {display:inline-block;padding:10px 0!important;}
+table[class*="bnn-green"] .resize-img {width:35px!important;}
+table[class*="bnn-green"] .text {padding:0 20px 20px 0!important;}
+table[class*="bnn-green"] .text .ttl {padding:15px 0 10px!important;}
+table[class*="bnn-green"] .text .ttl span {font-size:18px!important;line-height:18px!important;}
+table[class*="bnn-green"] .text a {font-size:11px!important;line-height:18px!important;}
+table[class*="bnn-green"] td[class="box-white"] {padding:0 20px 20px 0!important;}
+table[class*="bnn-green"] td[class="box-white"] .text {padding:10px!important;}
+table[class*="bnn-green"] td[class="box-white"] .text .ttl {padding:0 0 5px!important;}
+table[class*="bnn-green"] td[class="box-white"] .text .ttl span {font-size:13px!important;line-height:18px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img01 img {width:55px!important;height:5px!important;}
+table[class*="bnn-green"] .img02 img {width:5px!important;height:60px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img03 {width:55px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img03 img {width:55px!important;height:55px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img04 {width:3px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img04 img {width:3px!important;height:3px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img05 {height:3px!important;}
+table[class*="bnn-green"] td[class="box-white"] .img05 img {width:3px!important;height:3px!important;}
+table[class*="bnn-pink"] .resize-img {width:35px!important;}
+table[class*="bnn-pink"] .text {padding:0 20px 20px 0!important;}
+table[class*="bnn-pink"] .text .ttl {height:45px!important;}
+table[class*="bnn-pink"] .text .ttl span {font-size:18px!important;line-height:18px!important;}
+table[class*="bnn-pink"] .text a {font-size:11px!important;line-height:18px!important;}
+/* ONDA 2 */
+table[class*="prod-onda2"] .bnn-onda2 span {background-position:center center!important;display:block!important;height:144px!important;}
+table[class*="prod-onda2"] .td-onda2 {padding-top:15px!important;}
+table[class*="prod-onda2"] .img01 span,
+table[class*="prod-onda2"] .img02 a,
+table[class*="prod-onda2"] .img03 span {background-position:center center!important;display:block!important;}
+table[class*="prod-onda2"] .img01 span {height:129px!important;width:23px!important;}
+table[class*="prod-onda2"] .img02 img {height:129px!important;width:auto!important;}
+table[class*="prod-onda2"] .img03 span {height:25px!important;width:151px!important;}
+table[class*="prod-onda2"] .text {padding:0 10px 10px!important;}
+table[class*="prod-onda2"] .text span {font-size:12px!important;line-height:15px!important;}
+table[class*="prod-onda2"] .text img {width:109px!important;height:auto!important;}
+ }
+ </style>
+</head>
+<body style="margin:0;padding:0;">
+ <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="principal">
+ <!--Snippet-->
+ 
+ <tr>
+<td style="padding:0 20px 5px;" class="td-space-snippet">
+ <table width="100%" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td>
+ <table width="420" height="30" align="left" cellpadding="0" cellspacing="0" border="0" class="box-snippet">
+ <tr>
+ <td width="100%" align="left" valign="middle" class="snippet">
+ <a href="#" target="_blank" style="font-family:sans-serif; font-size:13px; color:#999999;">
+ Espaço indicado para snippet clicável.
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="150" height="30" align="right" cellpadding="0" cellspacing="0" border="0" class="box-snippet">
+ <tr>
+ <td width="100%" align="right" valign="middle" style="font-family:sans-serif; font-size:13px; color:#999999;" class="snippet">
+
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+</td>
+</tr>
+ 
+ <!--/-->
+ <!--Header-->
+ <tr>
+<td height="115" align="center" valign="middle" style="padding:0 20px 5px;" class="td-space header">
+ <table width="100%" height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td height="35" align="left" valign="bottom" class="logo">
+ <a href="http://avonstore.com.br/" target="_blank" style="display:block;">
+ <img src="img/avon.png" width="142" height="25" style="border:none;" alt="AVON" />
+ </a>
+ </td>
+ <td height="35" align="right" valign="bottom" class="menu">
+ <table width="100%" height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td height="35" align="center" valign="bottom">
+ <a href="http://www.avonstore.com.br/maquiagem" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:11px;color:#6a6a6a;text-transform:uppercase;text-decoration:none;">MAQUIAGEM</a>
+ </td>
+ <td height="35" align="center" valign="bottom" class="hidden">
+ <a href="http://www.avonstore.com.br/tratamento-e-prevencao" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:11px;color:#6a6a6a;text-transform:uppercase;text-decoration:none;">TRATAMENTO</a>
+ </td>
+ <td height="35" align="center" valign="bottom">
+ <a href="http://www.avonstore.com.br/tratamento-e-prevencao/cuidados-com-o-corpo" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:11px;color:#6a6a6a;text-transform:uppercase;text-decoration:none;">CORPO E BANHO</a>
+ </td>
+ <td height="35" align="center" valign="bottom" class="hidden">
+ <a href="http://www.avonstore.com.br/perfumes%20femininos%20masculinos" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:11px;color:#6a6a6a;text-transform:uppercase;text-decoration:none;">PERFUMARIA</a>
+ </td>
+ <td height="35" align="center" valign="bottom">
+ <a href="http://www.avonstore.com.br/promocao" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:11px;color:#6a6a6a;text-transform:uppercase;text-decoration:none;">PROMOÇÕES</a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+</td>
+${value1 + value2 + value1 + value2 + value1 + value2 + value1 + value2 + value1 + value2 + value1 + value2}
+${value1 - value2 - value1 - value2 - value1 - value2 - value1 - value2 - value1 - value2 - value1 - value2 - value1 - value2}
+${value1 * value2 * value1 * value2 * value1 * value2 * value1 * value2 * value1 * value2}
+${value1 / value2 / value1 / value2 / value1 / value2 / value1 / value2 / value1 / value2 / value1 / value2}
+</tr>
+ <!--/-->
+ <!--Bloco de conteúdo-->
+	<!-- bnn -->
+<tr>
+<td style="padding:0 20px 20px;" class="td-space dica-infalivel">
+	<a href="#" style="border:0;background-repeat:no-repeat;background-position:-9999px;background-size:300px;background-image:url('img/m-bnn-dica-infalivel.jpg');" target="_blank">
+		<img src="img/bnn-dica-infalivel.jpg" style="display:block;border:0;" class="hidden" alt="Dica infalivel.">
+	</a>
+</td>
+</tr>
+<!-- / -->
+	<!-- produto-onda1 -->
+<tr>
+<td style="padding:0 20px 15px;" class="td-space">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="prod-onda1">
+	<tr>
+	<td align="left" valign="middle" class="resize-img">
+		<a href="#" style="border:0;" target="_blank">
+			<img src="img/produto-temp.jpg" width="268" style="display:block;border:none;" alt="">
+		</a>
+	</td>
+	<td align="left" valign="top" class="text" style="padding:20px 10px 0 20px;">
+		<a href="#" style="border:0;text-decoration:none;" target="_blank">
+			<span style="font-family:sans-serif;font-size:18px;line-height:25px;color:#d95c84;border:0;">Que bom que você escolheu %Artigo%</span><br><br class="hidden">
+			<span style="font-family:sans-serif;font-size:18px;line-height:25px;color:#811d80;border:0;font-weight:bold;" class="prod-name">%ApelidodoProduto%</span><br><br class="hidden">
+			<span style="font-family:sans-serif;font-size:21px;line-height:25px;color:#d95c84;border:0;font-weight:bold;">Tudo explicadinho para melhorar os efeitos e te deixar ainda mais feliz com sua nova aquisição.</span>
+		</a>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<!-- / -->
+	<!-- bnn -->
+<tr>
+<td style="padding:0 20px 20px;" class="td-space">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="bnn-green" style="background:#00a7a0;">
+	<tr>
+	<td width="70" align="left" valign="top" class="resize-img">
+		<img src="img/img-onda1-green.jpg" style="display:block;border:0;" alt="">
+	</td>
+	<td align="center" valign="middle" class="text" style="padding:0 60px 35px 0;">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td align="left" valign="middle" class="ttl" style="padding:30px 0 30px;">
+			<span style="font-family:arial, sans-serif;font-size:22px;text-decoration:none;color:#ffffff;line-height:22px;">
+				O ideal é que você aplique
+			</span>
+		</td>
+		</tr>
+		<tr>
+		<td align="left" valign="middle">
+			<a href="#" style="font-family:arial, sans-serif;font-size:16px;text-decoration:none;color:#ffffff;line-height:30px;" target="_blank">
+				massageando o produto nas áreas mais propensas a estrias como coxas, abdômen e braços, até a completa absorção do produto.
+			</a>
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	<tr>
+	<td width="70" align="right" valign="top" class="resize-img img02">
+		<img src="img/px-left-amarelo.jpg" width="10" alt="">
+	</td>
+	<td align="center" valign="top" style="padding:0 60px 35px 0" class="box-white">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td align="left" valign="middle" class="img01">
+			<img src="img/px-top-amarelo.jpg" height="10" alt="">
+		</td>
+		</tr>
+		<tr>
+		<td align="left" valign="middle">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+			<tr>
+			<td width="109" align="left" valign="top" class="img03">
+				<img src="img/ico-amarelo.jpg" width="109" alt="">
+			</td>
+			<td align="left" valign="top" style="padding:30px;" class="text">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				<td align="left" valign="top" class="ttl" style="padding:0 0 15px;">
+					<span style="font-family:arial, sans-serif;font-size:22px;text-decoration:none;color:#e1038a;line-height:22px;">
+						<strong>Frequência recomendada</strong>
+					</span>
+				</td>
+				</tr>
+				<tr>
+				<td align="left" valign="middle">
+					<a href="#" style="font-family:arial, sans-serif;font-size:16px;text-decoration:none;color:#333333;line-height:30px;" target="_blank">
+						Utilize aproximadamente 5 ml por aplicação, pela manhã e à noite, diariamente.
+					</a>
+				</td>
+				</tr>
+				</table>
+			</td>
+			<td width="5" align="center" valign="top" style="background-color:#9b2989;" class="img04">
+				<img src="img/px-green-5x5.jpg" width="5" alt="">
+			</td>
+			</tr>
+			</table>
+		</td>
+		</tr>
+		<tr>
+		<td align="left" valign="middle" style="background-color:#9b2989;" class="img05">
+			<img src="img/px-green-5x5.jpg" height="5" alt="">
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<!-- / -->
+	<!-- bnn -->
+<tr>
+<td style="padding:0 20px 20px;" class="td-space">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="bnn-pink" style="background:#e7167e;">
+	<tr>
+	<td width="70" align="left" valign="top" class="resize-img">
+		<img src="img/img-onda1-pink.jpg" style="display:block;border:0;" alt="">
+	</td>
+	<td align="center" valign="middle" class="text" style="padding:0 35px 35px 0;">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td height="80" align="left" valign="middle" class="ttl">
+			<span style="font-family:arial, sans-serif;font-size:22px;text-decoration:none;color:#ffffff;line-height:22px;">
+				Benefícios
+			</span>
+		</td>
+		</tr>
+		<tr>
+		<td align="left" valign="middle">
+			<a href="#" style="font-family:arial, sans-serif;font-size:16px;text-decoration:none;color:#ffffff;line-height:30px;" target="_blank">
+				Essa <strong style="color:#ffe301;">Loção de Tratamento Anti Estrias</strong> possui um sistema de tratamento cosmético corporal, formulado com extrato de raiz de maçã, extrato de soja hidrolisado e fitol. Ajuda a restaurar a elasticidade e a proporcionar sensação de firmeza da pele. Reduz a aparência das estrias existentes, prevenindo o surgimento de novas.
+			</a>
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<!-- / -->
+	<!-- experimente tambem -->
+<tr>
+<td style="padding:0 20px 20px;" class="td-space exp-tbm">
+	<a href="#" style="border:0;background-repeat:no-repeat;background-position:-9999px;background-size:300px;background-image:url('img/m-experimente-tambem.jpg');" target="_blank">
+		<img src="img/m-experimente-tambem.jpg" style="display:block;border:0;" class="hidden" alt="Experimente também...">
+	</a>
+</td>
+</tr>
+<!-- / -->
+	<!-- 03 Produtos com variações de preço -->
+<tr>
+<td style="padding:0 20px 25px;" class="td-space">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="box-tres-produtos">
+	<tr>
+	<td width="187" align="center" valign="top" class="tres-produtos one no-float">
+		
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #f0f0f0;">
+		
+		<tr>
+		<td align="center" style="border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;padding:10px 0 10px;">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td align="center" valign="top" height="60" class="tres-produtos-nome">
+				<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;line-height:18px;">
+					Colônia Mulher e Poesia Doce Balanço - 50ml (descrição até 03 linhas)
+				</a>
+			</td>
+			</tr>
+			<tr>
+			<td align="center" style="padding-bottom:10px;">
+				<a href="#" target="_blank" style="display:block;"><img src="img/produto-temp.jpg" width="136" height="136" style="display:block;"></a>
+			</td>
+			</tr>
+			
+			<tr>
+			<td align="center" class="tres-produtos-preco">
+				<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;" class="tres-produtos-texto">
+					<span style="text-decoration:line-through;">
+						De: <strong>100,00</strong>
+					</span>
+				</a>&nbsp;
+				<br class="hidden">
+				<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#fa3a63;">
+					Por: <strong style="font-size:20px;">R$ 159,90</strong> cada
+				</a>
+			</td>
+			</tr>
+			
+			<tr>
+			<td align="center" style="padding-top:10px;" class="btn">
+				<a href="#" target="_blank" title="EU QUERO!"><img src="img/btn-eu-quero.jpg" alt="EU QUERO!"></a>
+			</td>
+			</tr>
+			</table>
+		</td>
+		</tr>
+		</table>
+	</td>
+	<td width="19" class="tres-produtos-divisor hidden">&nbsp;</td>
+	<td class="tres-produto no-float">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td width="187" align="center" valign="top" class="tres-produtos">
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #f0f0f0;">
+			
+			<tr>
+			<td align="center" style="border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;padding:10px 0 10px;">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				<td align="center" valign="top" height="60" class="tres-produtos-nome">
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;line-height:18px;">
+						Colônia Mulher e Poesia Doce Balanço - 50ml (descrição até 03 linhas)
+					</a>
+				</td>
+				</tr>
+				<tr>
+				<td align="center" style="padding-bottom:10px;">
+					<a href="#" target="_blank" style="display:block;"><img src="img/produto-temp.jpg" width="136" height="136" style="display:block;"></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td align="center" class="tres-produtos-preco">
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;" class="tres-produtos-texto">
+						<span style="text-decoration:line-through;">
+							De: <strong>100,00</strong>
+						</span>
+					</a>
+					<br>
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#fa3a63;">
+					Por: <strong style="font-size:20px;">R$ 159,90</strong> cada
+				</a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td align="center" style="padding-top:10px;" class="btn">
+					<a href="#" target="_blank" title="EU QUERO!"><img src="img/btn-eu-quero.jpg" alt="EU QUERO!"></a>
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			</table>
+		</td>
+		<td width="20" class="tres-produtos-divisor">&nbsp;</td>
+		<td width="187" align="center" valign="top" class="tres-produtos">
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #f0f0f0;">
+			
+			<tr>
+			<td align="center" style="border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;padding:10px 0 10px;">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				<td align="center" valign="top" height="60" class="tres-produtos-nome">
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;line-height:18px;">
+						Colônia Mulher e Poesia Doce Balanço - 50ml (descrição até 03 linhas)
+					</a>
+				</td>
+				</tr>
+				<tr>
+				<td align="center" style="padding-bottom:10px;">
+					<a href="#" target="_blank" style="display:block;"><img src="img/produto-temp.jpg" width="136" height="136" style="display:block;"></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td align="center" class="tres-produtos-preco">
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#333333;" class="tres-produtos-texto">
+						<span style="text-decoration:line-through;">
+							De: <strong>100,00</strong>
+						</span>
+					</a>
+					<br>
+					<a href="#" target="_blank" style="font-family:arial, sans-serif;font-size:15px;text-decoration:none;color:#fa3a63;">
+					Por: <strong style="font-size:20px;">R$ 159,90</strong> cada
+				</a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td align="center" style="padding-top:10px;" class="btn">
+					<a href="#" target="_blank" title="EU QUERO!"><img src="img/btn-eu-quero.jpg" alt="EU QUERO!"></a>
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			</table>
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<!-- / -->
+	<!-- bnn -->
+<tr>
+<td style="padding:0 20px 20px;" class="td-space gostou-das-dicas">
+	<a href="#" style="border:0;background-repeat:no-repeat;background-position:-9999px;background-size:300px;background-image:url('img/m-bnn-gostou-das-dicas.jpg');" target="_blank">
+		<img src="img/bnn-gostou-das-dicas.jpg" style="display:block;border:0;" class="hidden" alt="Gostou das dicas? Então deixa um comentário pra gente! COMENTE!">
+	</a>
+</td>
+</tr>
+<!-- / -->
+<!--/-->
+ <!--Footer-->
+ <!-- FOOTER -->
+<tr>
+<td class="footer td-space" style="padding:0 20px 30px;">
+ <table width="100%" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td align="center" valign="middle" style="padding-bottom:25px;">
+ <span style="font-family:Arial, sans-serif;font-size:12px;line-height:18px;color:#6a6a6a;">
+ *Nas compras acima de R$50,00 ganhe um mini Shampoo e um Mini Condicionador de Advance<br> Techniques Profissional! Caso algum dos produtos esteja em falta nos estoques, outro produto será<br> enviado como substituição.
+ </span>
+ </td>
+ </tr>
+ <tr>
+ <td align="center" class="tdCategoriaLine" style="border-top:1px solid #999999;padding-bottom:40px;"></td>
+ </tr>
+ <tr>
+ <td align="center" valign="middle" style="padding-bottom:15px;" class="tdCategoria">
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/maquiagem" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-maquiagem.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/maquiagem" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ MAQUIAGEM
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/tratamento-e-prevencao" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-tratamento.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/tratamento-e-prevencao" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ TRATAMENTOS
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/cuidados-diarios" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-corpo-banho.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/cuidados-diarios" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ CORPO E BANHO
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/unhas" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-unhas.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/unhas" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ UNHAS
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/perfumes" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-perfumaria.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/perfumes" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ PERFUMARIA
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/cabelos" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-cabelos.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/cabelos" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ CABELOS
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/produtos-infantis" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-infantil.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/produtos-infantis" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ INFANTIS
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/kit" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-kits.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/kit" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ KITS
+ </a>
+ </td>
+ </tr>
+ </table>
+ <table width="198" align="left" cellpadding="0" cellspacing="0" border="0" class="tbCategoria" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+ <tr>
+ <td width="45" valign="middle" style="padding-bottom:25px;">
+ <a href="http://www.avonstore.com.br/promocao" target="_blank" style="display:block;border:0;">
+ <img src="img/ico-f-promocoes.png" width="45" height="33" style="display:block;border:0;" border="0" alt="ico">
+ </a>
+ </td>
+ <td width="155" valign="middle" style="padding:0 0 18px;">
+ <a href="http://www.avonstore.com.br/promocao" style="font-family:Arial, Helvetica, Sans-Serif;font-size:15px;line-height:18px;color:#999999;text-decoration:none;text-transform:uppercase;" target="_blank">
+ PROMOÇÕES
+ </a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td align="center" class="tdCategoriaLine" style="border-top:1px solid #999999;padding-bottom:40px;"></td>
+ </tr>
+ <tr>
+ <td align="center" class="social" style="padding-bottom:30px;">
+ <table width="100%" height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td align="center" valign="middle" class="no-float" style="font-family:Arial, sans-serif;font-size:13px;color:#6a6a6a;">Siga a Avon nas redes sociais</td>
+ <td align="center" valign="middle" class="no-float">
+ <table width="100%" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td width="36" align="center" valign="middle">
+ <a href="https://www.facebook.com/avonbr/?fref=ts" style="border:0;display:inline-block;" target="_blank">
+ <img src="img/facebook.jpg" style="display:block;border:none;" alt="Facebook">
+ </a>
+ </td>
+ <td width="36" align="center" valign="middle">
+ <a href="https://twitter.com/avonbr" style="border:0;display:inline-block;" target="_blank">
+ <img src="img/twitter.jpg" style="display:block;border:none;" alt="Twitter">
+ </a>
+ </td>
+ <td width="36" align="center" valign="middle">
+ <a href="https://www.instagram.com/avonbrasil/?hl=pt-br" style="border:0;display:inline-block;" target="_blank">
+ <img src="img/instagram.jpg" style="display:block;border:none;" alt="Instagram">
+ </a>
+ </td>
+ <td width="36" align="center" valign="middle">
+ <a href="https://www.youtube.com/user/AvonBR" style="border:0;display:inline-block;" target="_blank">
+ <img src="img/youtube.jpg" style="display:block;border:none;" alt="Youtube">
+ </a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ <td align="center" valign="middle" class="no-float" style="font-family:Arial, sans-serif;font-size:13px;color:#6a6a6a;">Ou ligue: <strong>0800 708 2866</strong></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td align="center" class="foo-menu" style="padding-bottom:15px;">
+ <table height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td align="center" valign="middle" class="no-float">
+ <table height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td width="189" height="35" align="center" class="itemMenu"><a href="http://www.br.avon.com/PRSuite/locator.page" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:12px;color:#6a6a6a;text-transform:uppercase;">ENCONTRE UM REVENDEDOR</a></td>
+ <td width="10" height="35" align="center" class="pipe">|</td>
+ <td width="88" height="35" align="center" class="itemMenu"><a href="http://avonstore.com.br/" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:12px;color:#6a6a6a;text-transform:uppercase;">AVON STORE</a></td>
+ </tr>
+ </table>
+ </td>
+ <td width="10" height="35" align="center" valign="middle" class="hidden">|</td>
+ <td align="center" valign="middle" class="no-float">
+ <table height="35" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+ <td width="112" height="35" align="center" class="itemMenu"><a href="http://www.avon.com.br/comprar" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:12px;color:#6a6a6a;text-transform:uppercase;">COMO COMPRAR</a></td>
+ <td width="10" height="35" align="center" class="pipe">|</td>
+ <td width="151" height="35" align="center" class="itemMenu"><a href="http://www.avon.com.br/revender/" target="_blank" style="border:0;font-family:Arial, sans-serif;font-size:12px;color:#6a6a6a;text-transform:uppercase;">SEJA UM REVENDEDOR</a></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td align="center" valign="middle" class="legal" style="padding:0 10px;">
+ <span style="font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#6a6a6a;">
+ Cadastre <a href="mailto:avonbrasilnews@avonbrasil.avon.com" style="font-family:Arial, sans-serif;font-size:12px;line-height:18px;color:#6a6a6a;text-deoration:none;">avonbrasilnews@avonbrasil.avon.com</a> em seus contatos e continue <br class="hidden">recebendo nossas newsletters.<br><br>
+ As imagens são meramente ilustrativas e as ofertas válidas até xx/xx/20XX ou enquanto durarem<br> os estoques. Caso haja diferença de preço ou descrição do produto entre este e-mail e o site, a<br> condição válida e praticada será a do site.<br><br>
+ Válido para compras acima de R$50,00, no mês do seu aniversário. Caso algum dos produtos<br class="hidden"> esteja em falta, será enviado outro brinde como substituição.<br><br>
+ Eventuais erros neste e-mail têm preservado o direito de retificação. Na ocorrência de dúvidas,<br> entre em contato conosco pelo 08007082866 ou leia nosso Termos de Uso.<br><br>
+${email_address_}
+ </span>
+ </td>
+ </tr>
+ </table>
+</td>
+</tr>
+<!-- / -->
+ <!--/-->
+ </table>
+ <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ </div>
+</body>
+</html>

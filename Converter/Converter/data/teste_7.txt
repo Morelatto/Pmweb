@@ -1,0 +1,1 @@
+$setglobalvars(qual_produto,round(add(lookup(qual_produto),1)))$
